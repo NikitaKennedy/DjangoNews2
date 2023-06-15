@@ -1,5 +1,5 @@
 # DjangoNews2
-# NewsPaper - Новостной портал
+# Новостной портал
 
 ## Getting Started
 
