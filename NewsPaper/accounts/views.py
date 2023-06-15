@@ -10,3 +10,9 @@ class SignUp(CreateView):
     form_class = SignUpForm
     success_url = '/accounts/login'
     template_name = 'registration/signup.html'
+
+class LogOut(CreateView):
+    model = User
+    form_class = SignUpForm
+    success_url = '/accounts/logout'
+    template_name = 'registration/logget_out.html'

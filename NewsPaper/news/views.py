@@ -7,7 +7,6 @@ from .forms import AddPostForm
 from .filters import PostFilter
 
 
-
 class PostsList(ListView):
     model = Post
     template_name = 'news/post_list.html'
@@ -32,7 +31,8 @@ class PostSearch(ListView):
         context['filter'] = PostFilter(self.request.GET, queryset=self.get_queryset())
         return context
 
-class PostCreate(CreateView):
+
+class PostCreate(LoginRequiredMixin, CreateView):
     template_name = 'news/post_create.html'
     form_class = AddPostForm
 
@@ -46,7 +46,7 @@ class PostUpdate(LoginRequiredMixin, UpdateView):
         return Post.objects.get(pk=id)
 
 
-class PostDelete(DeleteView):
+class PostDelete(LoginRequiredMixin, DeleteView):
     template_name = 'news/post_delete.html'
     queryset = Post.objects.all()
     success_url = reverse_lazy('news')
