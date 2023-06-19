@@ -131,8 +131,13 @@ EMAIL_HOST_USER = "nikitakennedy@yandex.ru"
 EMAIL_HOST_PASSWORD = "rywxxwktjexcrked"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
-
 DEFAULT_FROM_EMAIL = "akennedy@yandex.ru"
+
+SERVER_EMAIL = "akennedy@yandex.ru"
+MANAGERS = (
+    ('Kirill', 'kazantip.nik@gmail.com'),
+    ('Vera', 'nikitakennedy@yandex.ru'),
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
