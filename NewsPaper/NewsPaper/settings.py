@@ -131,9 +131,9 @@ EMAIL_HOST_USER = "nikitakennedy@yandex.ru"
 EMAIL_HOST_PASSWORD = "rywxxwktjexcrked"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = "akennedy@yandex.ru"
+DEFAULT_FROM_EMAIL = "nikitakennedy@yandex.ru"
 
-SERVER_EMAIL = "akennedy@yandex.ru"
+SERVER_EMAIL = "nikitakennedy@yandex.ru"
 MANAGERS = (
     ('Kirill', 'kazantip.nik@gmail.com'),
     ('Vera', 'nikitakennedy@yandex.ru'),

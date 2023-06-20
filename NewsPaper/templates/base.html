@@ -22,7 +22,12 @@
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'news' %}">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'search' %}">Search</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'post_create' %}">Add post</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login or Sing up</a></li>
+                       {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}?next={{request.path}}">Logout</a>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'post_create' %}">User: {{ user.get_username }}</a></li>
+       {% else %}
+         <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}?next={{request.path}}">Login</a></li>
+       {% endif %}
            </ul>
        </div>
    </div>
