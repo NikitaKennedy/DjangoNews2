@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_filters',
     'news',
     'accounts',
+    'subscriptions',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

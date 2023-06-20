@@ -6,7 +6,6 @@ from .models import Post
 from .forms import AddPostForm
 from .filters import PostFilter
 
-
 class PostsList(ListView):
     model = Post
     template_name = 'news/post_list.html'
