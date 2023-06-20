@@ -132,7 +132,7 @@ EMAIL_HOST_PASSWORD = "rywxxwktjexcrked"
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = "nikitakennedy@yandex.ru"
-
+EMAIL_SUBJECT_PREFIX = '[NEWSPAPER]'
 SERVER_EMAIL = "nikitakennedy@yandex.ru"
 MANAGERS = (
     ('Kirill', 'kazantip.nik@gmail.com'),
