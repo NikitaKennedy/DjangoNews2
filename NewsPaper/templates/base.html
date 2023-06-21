@@ -23,6 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'search' %}">Search</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'post_create' %}">Add post</a></li>
                        {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'subscriptions' %}">Your Subs</a>
                     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}?next={{request.path}}">Logout</a>
                     <li class="nav-item"><a class="nav-link" href="{% url 'post_create' %}">User: {{ user.get_username }}</a></li>
        {% else %}

@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 from news.models import Category
 # Create your models here.
 
-class Subscription(models.Model):
+
+class Subscriber(models.Model):
     user = models.ForeignKey(
         to=User,
         on_delete=models.CASCADE,
