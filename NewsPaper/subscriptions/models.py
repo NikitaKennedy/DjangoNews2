@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from news.models import Category
-# Create your models here.
 
 
 class Subscriber(models.Model):
@@ -11,7 +10,9 @@ class Subscriber(models.Model):
         related_name='subscriptions',
     )
     category = models.ForeignKey(
-        to= Category,
+        to=Category,
         on_delete=models.CASCADE,
         related_name='subscriptions',
     )
+
+
