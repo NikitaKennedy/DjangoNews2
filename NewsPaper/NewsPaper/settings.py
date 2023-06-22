@@ -166,3 +166,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+APSCHEDULER_RUN_NOW_TIMEOUT = 25
+SITE_URL = 'http://127.0.0.1:8000'
