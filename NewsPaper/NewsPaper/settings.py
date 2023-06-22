@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_filters',
-    'news',
+    'news.apps.NewsConfig',
     'accounts',
     'subscriptions',
     'allauth',
