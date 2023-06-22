@@ -22,7 +22,7 @@ def new_post_created(instance, created, **kwargs):
         f'Post link: http://127.0.0.1:8000{instance.get_absolute_url()}'
     )
     html_content = (
-        f'New Post Title: {instance.title}<br>'
+        f'We have a new content for you: <br> {instance.title}<br>'
         f'<a href="http://127.0.0.1{instance.get_absolute_url()}">'
         f'Hurry up to read!</a>'
     )
