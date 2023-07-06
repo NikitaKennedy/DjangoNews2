@@ -1,9 +1,6 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.contrib.auth.models import User
-from django.core.mail import EmailMultiAlternatives
-from .models import Post
-
+from .tasks import *
 
 @receiver(post_save, sender=Post)
 def new_post_created(instance, created, **kwargs):
